@@ -5,8 +5,6 @@ Description: WordPress theme for Museu Boulieu a child theme of Blocksy
 Author: wetah
 Version: 0.0.1
 Text Domain: museu-boulieu
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
 */
 
 if (! defined('WP_DEBUG')) {
