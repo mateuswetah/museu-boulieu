@@ -5,3 +5,7 @@
  * Template: blocksy
  * Text Domain: museu-boulieu
  */
+
+[data-prefix="blog"] [data-cards="boxed"] .entry-card {
+    --box-shadow: none;
+}
