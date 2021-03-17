@@ -23,8 +23,8 @@
 }
 
 /* Page custom layout */
-article.post,
-article.page {
+body:not(.home) article.post,
+body:not(.home) article.page {
     display: flex;
     display: grid;
     grid-template-columns: 20% 80%;
@@ -36,62 +36,69 @@ article.page {
         "aside-section-top content-section"
         "aside-section-bottom content-section";
 }
-article.post .ct-featured-image,
-article.page .ct-featured-image { 
+body:not(.home) article.post .ct-featured-image,
+body:not(.home) article.page .ct-featured-image { 
     grid-area: featured-image;
     margin-bottom: -8px;
 }
-article.post .ct-featured-image .ct-image-container,
-article.page .ct-featured-image .ct-image-container {
+body:not(.home) article.post .ct-featured-image .ct-image-container,
+body:not(.home) article.page .ct-featured-image .ct-image-container {
     width: calc(100vw - 13px - (var(--frame-size, 0px) * 2));
     margin-left: calc( 50% - 13px - (50vw - var(--frame-size, 0px)));
     margin-right: calc( 50% - 13px - (50vw - var(--frame-size, 0px)));
 }
-article.post .hero-section,
-article.page .hero-section {
+body:not(.home) article.post .hero-section,
+body:not(.home) article.page .hero-section {
     grid-area: aside-section-top;
     padding-top: 56px;
 }
-article.post .hero-section .page-description,
-article.page .hero-section .page-description {
+body:not(.home) article.post .hero-section .page-description,
+body:not(.home) article.page .hero-section .page-description {
     margin-top: 94px;
 }
-article.post .museu-boulieu-extra-page-info,
-article.page .museu-boulieu-extra-page-info {
+body:not(.home) article.post .museu-boulieu-extra-page-info,
+body:not(.home) article.page .museu-boulieu-extra-page-info {
     grid-area: aside-section-bottom;
 }
-article.post .entry-content,
-article.page .entry-content {
+body:not(.home) article.post .entry-content,
+body:not(.home) article.page .entry-content {
     grid-area: content-section;
     border-left: 2px solid var(--boulieu-gray, #231f20);
     padding-left: 48px;
     padding-right: 48px;
     padding-top: 56px;
+    padding-bottom: 56px;
+}
+
+body.page #main>.ct-container>section,
+body.post #main>.ct-container>section {
+    padding-bottom: 0px;
 }
 
 @media screen and (max-width: 992px) {
-    article.post,
-    article.page {
+    body:not(.home) article.post,
+    body:not(.home) article.page {
         display: block;
     }
-    article.post .hero-section,
-    article.page .hero-section {
+    body:not(.home) article.post .hero-section,
+    body:not(.home) article.page .hero-section {
         padding-top: 12px;
     }
-    article.post .hero-section .page-description,
-    article.page .hero-section .page-description {
+    body:not(.home) article.post .hero-section .page-description,
+    body:not(.home) article.page .hero-section .page-description {
         margin-top: 12px;
     }
-    article.post .museu-boulieu-extra-page-info,
-    article.page .museu-boulieu-extra-page-info {
+    body:not(.home) article.post .museu-boulieu-extra-page-info,
+    body:not(.home) article.page .museu-boulieu-extra-page-info {
         border-top: 2px solid var(--boulieu-gray, #231f20);
     }
-    article.post .entry-content,
-    article.page .entry-content {
+    body:not(.home) article.post .entry-content,
+    body:not(.home) article.page .entry-content {
         border-left: none;
         padding-left: 12px;
         padding-right: 12px;
         padding-top: 12px;
+        padding-bottom: 12px;
     }
 }
 /* Tainacan-related Styles */
