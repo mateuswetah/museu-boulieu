@@ -6,6 +6,7 @@
  * Text Domain: museu-boulieu
  */
 
+/* Color and size variables used across site */
 :root {
     --boulieu-gray: #231f20;
     --boulieu-gray-2: #272525;
@@ -21,77 +22,77 @@
     --backgroundColor:  #ffffff;
 }
 
-.theme-items-list {
-    --tainacan-primary: var(--boulieu-orange, #af563b);
-    --tainacan-secondary: var(--boulieu-red-2, #8b3527);
-    --tainacan-success: var(--boulieu-red-2, #8b3527);
-    --tainacan-input-border-color: var(--boulieu-gray-2, #272525);
+/* Page custom layout */
+article.post,
+article.page {
+    display: flex;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto auto auto;
+    gap: 0px 36px;
+    align-items: start;
+    grid-template-areas:
+        "featured-image featured-image"
+        "aside-section-top content-section"
+        "aside-section-bottom content-section";
+}
+article.post .ct-featured-image,
+article.page .ct-featured-image { 
+    grid-area: featured-image;
+    margin-bottom: -8px;
+}
+article.post .ct-featured-image .ct-image-container,
+article.page .ct-featured-image .ct-image-container {
+    width: calc(100vw - 13px - (var(--frame-size, 0px) * 2));
+    margin-left: calc( 50% - 13px - (50vw - var(--frame-size, 0px)));
+    margin-right: calc( 50% - 13px - (50vw - var(--frame-size, 0px)));
+}
+article.post .hero-section,
+article.page .hero-section {
+    grid-area: aside-section-top;
+    padding-top: 56px;
+}
+article.post .hero-section .page-description,
+article.page .hero-section .page-description {
+    margin-top: 94px;
+}
+article.post .museu-boulieu-extra-page-info,
+article.page .museu-boulieu-extra-page-info {
+    grid-area: aside-section-bottom;
+}
+article.post .entry-content,
+article.page .entry-content {
+    grid-area: content-section;
+    border-left: 2px solid var(--boulieu-gray, #231f20);
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-top: 56px;
 }
 
-.theme-items-list #filters-modal {
-    z-index: 1;
+@media screen and (max-width: 992px) {
+    article.post,
+    article.page {
+        display: block;
+    }
+    article.post .hero-section,
+    article.page .hero-section {
+        padding-top: 12px;
+    }
+    article.post .hero-section .page-description,
+    article.page .hero-section .page-description {
+        margin-top: 12px;
+    }
+    article.post .museu-boulieu-extra-page-info,
+    article.page .museu-boulieu-extra-page-info {
+        border-top: 2px solid var(--boulieu-gray, #231f20);
+    }
+    article.post .entry-content,
+    article.page .entry-content {
+        border-left: none;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 12px;
+    }
 }
-.theme-items-list #filters-modal .modal-content {
-    border-right: 1px solid var(--boulieu-gray);
-}
-.theme-items-list #items-list-area {
-    margin-top: 12px;
-}
-.theme-items-list #items-list-area #items-list-results .table-container {
-    padding: 12px 24px;
-}
-.tainacan-collection-header {
-    --tainacan-background-color: transparent;
-}
-.theme-items-list input[type="text"],
-.theme-items-list input[type="password"],
-.theme-items-list input[type="search"],
-.theme-items-list input[type="email"],
-.theme-items-list input[type="url"],
-.theme-items-list input[type="tel"],
-.theme-items-list input[type="number"],
-.theme-items-list input[type="range"],
-.theme-items-list input[type="date"],
-.theme-items-list textarea,
-.theme-items-list .filter-item-forms .taginput-container input,
-.theme-items-list .tainacan-form .dropdown .button {
-    border-top-color: transparent !important;
-    border-left-color: transparent !important;
-    border-right-color: transparent !important;
-    border-bottom-color: var(--boulieu-gray-2) !important;
-}
-
-.theme-items-list .dropdown .dropdown-menu .dropdown-content .dropdown-item:hover,
-.theme-items-list .dropdown .dropdown-menu .dropdown-content .has-link a:hover,
-.theme-items-list .dropdown .dropdown-menu .has-link .dropdown-content a:hover,
-.theme-items-list .autocomplete .dropdown-menu .dropdown-content .dropdown-item:hover,
-.theme-items-list .autocomplete .dropdown .dropdown-menu .dropdown-content .has-link a:hover,
-.theme-items-list .dropdown .autocomplete .dropdown-menu .dropdown-content .has-link a:hover,
-.theme-items-list .autocomplete .dropdown .dropdown-menu .has-link .dropdown-content a:hover,
-.theme-items-list .dropdown .autocomplete .dropdown-menu .has-link .dropdown-content a:hover {
-    background-color: var(--boulieu-gray-3);
-}
-
-.theme-items-list .tags,
-.theme-items-list .tags .tag.is-delete,
-.theme-items-list .tags .tag.is-delete:hover,
-.theme-items-list .tags .tag.is-delete:focus,
-.theme-items-list .tags .tag.is-delete:active {
-    border-radius: 0px !important;
-}
-.theme-items-list .tags .tag.is-delete:hover,
-.theme-items-list .tag.is-delete:focus,
-.theme-items-list .tag.is-delete:hover:hover,
-.theme-items-list .tag.is-delete:hover:focus,
-.theme-items-list .tag.is-delete:focus:hover,
-.theme-items-list .tag.is-delete:focus:focus,
-.theme-items-list .tag.is-delete:active:hover,
-.theme-items-list .tag.is-delete:active:focus {
-    background-color: var(--boulieu-red) !important;
-    color: #ffffff !important;
-    border: 1px solid var(--boulieu-red) !important;
-}
-
-.theme-items-list .button {
-    border-radius: 0px !important;
-}
+/* Tainacan-related Styles */
+@import './css/tainacan.css';

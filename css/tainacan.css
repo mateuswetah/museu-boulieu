@@ -1,0 +1,81 @@
+
+.tainacan-collection-header {
+    --tainacan-background-color: transparent;
+}
+.tainacan-collection-header .tainacan-collection-header__box .page-title {
+    font-size: 2.5rem;
+}
+
+.theme-items-list {
+    --tainacan-primary: var(--boulieu-orange, #af563b);
+    --tainacan-secondary: var(--boulieu-red-2, #8b3527);
+    --tainacan-success: var(--boulieu-red-2, #8b3527);
+    --tainacan-input-border-color: var(--boulieu-gray-2, #272525);
+}
+
+.theme-items-list #filters-modal {
+    z-index: 1;
+}
+.theme-items-list #filters-modal .modal-content {
+    border-right: 1px solid var(--boulieu-gray);
+}
+.theme-items-list #items-list-area {
+    margin-top: 12px;
+}
+.theme-items-list #items-list-area #items-list-results .table-container {
+    padding: 12px 24px;
+}
+
+.theme-items-list input[type="text"],
+.theme-items-list input[type="password"],
+.theme-items-list input[type="search"],
+.theme-items-list input[type="email"],
+.theme-items-list input[type="url"],
+.theme-items-list input[type="tel"],
+.theme-items-list input[type="number"],
+.theme-items-list input[type="range"],
+.theme-items-list input[type="date"],
+.theme-items-list textarea,
+.theme-items-list .filter-item-forms .taginput-container input,
+.theme-items-list .tainacan-form .dropdown .button {
+    border-top-color: transparent !important;
+    border-left-color: transparent !important;
+    border-right-color: transparent !important;
+    border-bottom-color: var(--boulieu-gray-2) !important;
+}
+
+.theme-items-list .dropdown .dropdown-menu .dropdown-content .dropdown-item:hover,
+.theme-items-list .dropdown .dropdown-menu .dropdown-content .has-link a:hover,
+.theme-items-list .dropdown .dropdown-menu .has-link .dropdown-content a:hover,
+.theme-items-list .autocomplete .dropdown-menu .dropdown-content .dropdown-item:hover,
+.theme-items-list .autocomplete .dropdown .dropdown-menu .dropdown-content .has-link a:hover,
+.theme-items-list .dropdown .autocomplete .dropdown-menu .dropdown-content .has-link a:hover,
+.theme-items-list .autocomplete .dropdown .dropdown-menu .has-link .dropdown-content a:hover,
+.theme-items-list .dropdown .autocomplete .dropdown-menu .has-link .dropdown-content a:hover {
+    background-color: var(--boulieu-gray-3);
+}
+
+.theme-items-list .tags,
+.theme-items-list .tags .tag.is-delete,
+.theme-items-list .tags .tag.is-delete:hover,
+.theme-items-list .tags .tag.is-delete:focus,
+.theme-items-list .tags .tag.is-delete:active {
+    border-radius: 0px !important;
+}
+.theme-items-list .tags .tag.is-delete:hover,
+.theme-items-list .tag.is-delete:focus,
+.theme-items-list .tag.is-delete:hover:hover,
+.theme-items-list .tag.is-delete:hover:focus,
+.theme-items-list .tag.is-delete:focus:hover,
+.theme-items-list .tag.is-delete:focus:focus,
+.theme-items-list .tag.is-delete:active:hover,
+.theme-items-list .tag.is-delete:active:focus {
+    background-color: var(--boulieu-red) !important;
+    color: #ffffff !important;
+    border: 1px solid var(--boulieu-red) !important;
+}
+
+.theme-items-list .button,
+.theme-items-list #items-list-area #items-list-results .pagination-area .pagination .pagination-link {
+    border-radius: 0px !important;
+}
