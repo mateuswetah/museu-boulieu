@@ -13,6 +13,9 @@
 /* Tainacan-related Styles */
 @import "./css/tainacan.css";
 
+/* Custom Block Styles */
+@import "./css/block-styles.css";
+
 /* Page custom layout */
 body:not(.home):not(.archive) article.post:not(.entry-card),
 body:not(.home):not(.archive) article.page:not(.entry-card) {

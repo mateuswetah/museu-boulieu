@@ -89,3 +89,6 @@ function museu_boulieu_filter_palette( $args ) {
 	);
 }
 add_filter( 'blocksy:editor-color-palette', 'museu_boulieu_filter_palette' );
+
+// Registers Block styles
+require get_stylesheet_directory() . '/inc/block-styles.php';

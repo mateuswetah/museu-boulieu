@@ -1,0 +1,49 @@
+/* Column with borders style */
+.wp-block-columns.is-style-column-museu-boulieu .wp-block-column:not(:first-child) {
+    padding-left: 2em;
+    border-left-width: 1px;
+    border-left-style: solid;
+}
+.wp-block-columns.is-style-column-museu-boulieu:not(.has-text-color) .wp-block-column:not(:first-child) {
+    border-left-color: var(--boulieu-gray-2, #272525);
+}
+.wp-block-columns.is-style-column-museu-boulieu.has-palette-color-1-color .wp-block-column:not(:first-child) {
+    border-left-color: var(--paletteColor1) !important;
+}
+.wp-block-columns.is-style-column-museu-boulieu.has-palette-color-2-color .wp-block-column:not(:first-child) {
+    border-left-color: var(--paletteColor2) !important;
+}
+.wp-block-columns.is-style-column-museu-boulieu.has-palette-color-3-color  .wp-block-column:not(:first-child){
+    border-left-color: var(--paletteColor3) !important;
+}
+.wp-block-columns.is-style-column-museu-boulieu.has-palette-color-4-color .wp-block-column:not(:first-child) {
+    border-left-color: var(--paletteColor4) !important;
+}
+.wp-block-columns.is-style-column-museu-boulieu.has-palette-color-5-color .wp-block-column:not(:first-child) {
+    border-left-color: var(--paletteColor5) !important;
+}
+
+/* Group with borders style */
+.wp-block-group.is-style-group-museu-boulieu {
+    padding: 20px;
+    border-width: 1px;
+    border-style: solid;
+}
+.wp-block-group.is-style-group-museu-boulieu:not(.has-text-color) {
+    border-color: var(--boulieu-gray-2, #272525);
+}
+.wp-block-group.is-style-group-museu-boulieu.has-palette-color-1-color {
+    border-color: var(--paletteColor1) !important;
+}
+.wp-block-group.is-style-group-museu-boulieu.has-palette-color-2-color {
+    border-color: var(--paletteColor2) !important;
+}
+.wp-block-group.is-style-group-museu-boulieu.has-palette-color-3-color {
+    border-color: var(--paletteColor3) !important;
+}
+.wp-block-group.is-style-group-museu-boulieu.has-palette-color-4-color {
+    border-color: var(--paletteColor4) !important;
+}
+.wp-block-group.is-style-group-museu-boulieu.has-palette-color-5-color {
+    border-color: var(--paletteColor5) !important;
+}
