@@ -92,3 +92,6 @@ add_filter( 'blocksy:editor-color-palette', 'museu_boulieu_filter_palette' );
 
 // Registers Block styles
 require get_stylesheet_directory() . '/inc/block-styles.php';
+
+// Registers Block patterns
+require get_stylesheet_directory() . '/inc/block-patterns.php';
