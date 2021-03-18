@@ -23,10 +23,36 @@ add_action( 'wp_enqueue_scripts', 'museu_boulieu_enqueues');
 
 /* Renders the content of the aside part of pages and posts, bellow the title */
 function museu_boulieu_page_side_layout() {
+	global $post;
 ?>
-	
 	<div class="museu-boulieu-extra-page-info">
-		Aqui vai o conteúdo lateral
+		<?php 
+			$aside_post_image_1_id = get_post_meta($post->ID, 'imagem_lateral_1');
+
+			if ( $aside_post_image_1_id ): 
+
+				if ( is_array($aside_post_image_1_id) && !empty($aside_post_image_1_id) )
+					$aside_post_image_1_id = $aside_post_image_1_id[0];
+
+				$aside_post_image_1 = wp_get_attachment_image( $aside_post_image_1_id, 'medium', true );
+
+				if ( $aside_post_image_1 ) :
+			?>
+			<figure>
+				<?php 
+					echo $aside_post_image_1;
+
+					$aside_post_image_1_caption = wp_get_attachment_caption( $aside_post_image_1_id );
+					if ( $aside_post_image_1_caption  ) :
+				?>
+				<figcaption>
+					<?php echo $aside_post_image_1_caption; ?>
+				</figcaption>
+				<?php endif; ?>
+			</figure>
+			<?php endif; ?>
+		
+		<?php endif; ?>
 	</div>
 <?php
 }

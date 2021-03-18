@@ -1,4 +1,4 @@
-
+/* Item list pages */
 .tainacan-collection-header {
     --tainacan-background-color: transparent;
 }
@@ -78,4 +78,18 @@
 .theme-items-list .button,
 .theme-items-list #items-list-area #items-list-results .pagination-area .pagination .pagination-link {
     border-radius: 0px !important;
+}
+
+/* Single Item Page */
+
+@media screen and (min-width: 960px) {
+    .tainacan-item-single .tainacan-item-section--metadata {
+        border-left: 2px solid var(--boulieu-gray-2, #272525);
+        padding-left: 24px;
+        margin-left: -12px;
+    }
+}
+
+.tainacan-item-single .tainacan-item-section__metadata {
+    column-rule: 1px solid var(--boulieu-gray-3, #949494);
 }

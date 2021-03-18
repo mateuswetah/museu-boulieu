@@ -1,0 +1,14 @@
+:root {
+    --boulieu-gray: #231f20;
+    --boulieu-gray-2: #272525;
+    --boulieu-gray-3: #949494;
+    --boulieu-orange: #af563b;
+    --boulieu-red: #a13121;
+    --boulieu-red-2: #8b3527;
+    --boulieu-blue: #455379;
+    --boulieu-green: #3e4929;
+
+    --boxShadow: 0px;
+    --borderRadius: 0px;
+    --backgroundColor:  #ffffff;
+}

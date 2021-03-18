@@ -6,62 +6,64 @@
  * Text Domain: museu-boulieu
  */
 
-/* Color and size variables used across site */
-:root {
-    --boulieu-gray: #231f20;
-    --boulieu-gray-2: #272525;
-    --boulieu-gray-3: #949494;
-    --boulieu-orange: #af563b;
-    --boulieu-red: #a13121;
-    --boulieu-red-2: #8b3527;
-    --boulieu-blue: #455379;
-    --boulieu-green: #3e4929;
 
-    --boxShadow: 0px;
-    --borderRadius: 0px;
-    --backgroundColor:  #ffffff;
-}
+/* Color and size variables used across site */
+@import "./css/variables.css";
+
+/* Tainacan-related Styles */
+@import "./css/tainacan.css";
 
 /* Page custom layout */
-body:not(.home) article.post,
-body:not(.home) article.page {
+body:not(.home):not(.archive) article.post:not(.entry-card),
+body:not(.home):not(.archive) article.page:not(.entry-card) {
     display: flex;
     display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: auto auto auto;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: auto;
     gap: 0px 36px;
     align-items: start;
     grid-template-areas:
         "featured-image featured-image"
         "aside-section-top content-section"
-        "aside-section-bottom content-section";
+        "aside-section-bottom content-section"
+        "bottom-section bottom-section";
 }
-body:not(.home) article.post .ct-featured-image,
-body:not(.home) article.page .ct-featured-image { 
+body:not(.home):not(.archive) article.post:not(.entry-card) .ct-featured-image,
+body:not(.home):not(.archive) article.page:not(.entry-card) .ct-featured-image { 
     grid-area: featured-image;
     margin-bottom: -8px;
 }
-body:not(.home) article.post .ct-featured-image .ct-image-container,
-body:not(.home) article.page .ct-featured-image .ct-image-container {
+body:not(.home):not(.archive) article.post:not(.entry-card) .ct-featured-image .ct-image-container,
+body:not(.home):not(.archive) article.page:not(.entry-card) .ct-featured-image .ct-image-container {
     width: calc(100vw - 13px - (var(--frame-size, 0px) * 2));
     margin-left: calc( 50% - 13px - (50vw - var(--frame-size, 0px)));
     margin-right: calc( 50% - 13px - (50vw - var(--frame-size, 0px)));
 }
-body:not(.home) article.post .hero-section,
-body:not(.home) article.page .hero-section {
+body:not(.home):not(.archive) article.post:not(.entry-card) .hero-section,
+body:not(.home):not(.archive) article.page:not(.entry-card) .hero-section {
     grid-area: aside-section-top;
     padding-top: 56px;
 }
-body:not(.home) article.post .hero-section .page-description,
-body:not(.home) article.page .hero-section .page-description {
+body:not(.home):not(.archive) article.post:not(.entry-card) .hero-section .page-description,
+body:not(.home):not(.archive) article.page:not(.entry-card) .hero-section .page-description {
     margin-top: 94px;
 }
-body:not(.home) article.post .museu-boulieu-extra-page-info,
-body:not(.home) article.page .museu-boulieu-extra-page-info {
+body:not(.home):not(.archive) article.post:not(.entry-card) .museu-boulieu-extra-page-info,
+body:not(.home):not(.archive) article.page:not(.entry-card) .museu-boulieu-extra-page-info {
     grid-area: aside-section-bottom;
 }
-body:not(.home) article.post .entry-content,
-body:not(.home) article.page .entry-content {
+body:not(.home):not(.archive) article.post:not(.entry-card) .museu-boulieu-extra-page-info figure,
+body:not(.home):not(.archive) article.page:not(.entry-card) .museu-boulieu-extra-page-info figure {
+    text-align: right;
+}
+body:not(.home):not(.archive) article.post:not(.entry-card) .museu-boulieu-extra-page-info figcaption,
+body:not(.home):not(.archive) article.page:not(.entry-card) .museu-boulieu-extra-page-info figcaption {
+    --fontFamily: Playfair Display, Sans-Serif;
+    font-size: 0.875em;
+    margin-top: 1em;
+}
+body:not(.home):not(.archive) article.post:not(.entry-card) .entry-content,
+body:not(.home):not(.archive) article.page:not(.entry-card) .entry-content {
     grid-area: content-section;
     border-left: 2px solid var(--boulieu-gray, #231f20);
     padding-left: 48px;
@@ -69,31 +71,34 @@ body:not(.home) article.page .entry-content {
     padding-top: 56px;
     padding-bottom: 56px;
 }
-
+body:not(.home):not(.archive) article.post:not(.entry-card) .post-navigation,
+body:not(.home):not(.archive) article.page:not(.entry-card) .post-navigation {
+    grid-area: bottom-section;
+}
 body.page #main>.ct-container>section,
 body.post #main>.ct-container>section {
     padding-bottom: 0px;
 }
 
 @media screen and (max-width: 992px) {
-    body:not(.home) article.post,
-    body:not(.home) article.page {
+    body:not(.home):not(.archive) article.post:not(.entry-card),
+    body:not(.home):not(.archive) article.page:not(.entry-card) {
         display: block;
     }
-    body:not(.home) article.post .hero-section,
-    body:not(.home) article.page .hero-section {
+    body:not(.home):not(.archive) article.post:not(.entry-card) .hero-section,
+    body:not(.home):not(.archive) article.page:not(.entry-card) .hero-section {
         padding-top: 12px;
     }
-    body:not(.home) article.post .hero-section .page-description,
-    body:not(.home) article.page .hero-section .page-description {
+    body:not(.home):not(.archive) article.post:not(.entry-card) .hero-section .page-description,
+    body:not(.home):not(.archive) article.page:not(.entry-card) .hero-section .page-description {
         margin-top: 12px;
     }
-    body:not(.home) article.post .museu-boulieu-extra-page-info,
-    body:not(.home) article.page .museu-boulieu-extra-page-info {
+    body:not(.home):not(.archive) article.post:not(.entry-card) .museu-boulieu-extra-page-info,
+    body:not(.home):not(.archive) article.page:not(.entry-card) .museu-boulieu-extra-page-info {
         border-top: 2px solid var(--boulieu-gray, #231f20);
     }
-    body:not(.home) article.post .entry-content,
-    body:not(.home) article.page .entry-content {
+    body:not(.home):not(.archive) article.post:not(.entry-card) .entry-content,
+    body:not(.home):not(.archive) article.page:not(.entry-card) .entry-content {
         border-left: none;
         padding-left: 12px;
         padding-right: 12px;
@@ -101,5 +106,3 @@ body.post #main>.ct-container>section {
         padding-bottom: 12px;
     }
 }
-/* Tainacan-related Styles */
-@import './css/tainacan.css';
