@@ -49,7 +49,7 @@
 }
 
 /* Stackable blocks */
-.ugb-accordion.ugb-accordion--v2.ugb-accordion>.ugb-inner-block>.ugb-block-content>.ugb-accordion__item>.ugb-accordion__heading svg {
+.ugb-accordion.ugb-accordion--v2.ugb-accordion > .ugb-inner-block > .ugb-block-content > .ugb-accordion__item > .ugb-accordion__heading svg {
     fill: transparent !important;
     width: 0px;
     height: 0px;
@@ -69,6 +69,12 @@
     font-size: 3rem;
     font-weight: normal;
     color: var(--paletteColor5,#ffffff);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4rem;
     transition: transform ease 0.2s;
     transform: rotate(0deg);
 }

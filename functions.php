@@ -3,7 +3,7 @@
 Theme Name: Museu Boulieu
 Description: WordPress theme for Museu Boulieu a child theme of Blocksy
 Author: wetah
-Version: 0.0.1
+Version: 0.0.2
 Text Domain: museu-boulieu
 */
 
@@ -12,7 +12,7 @@ if (! defined('WP_DEBUG')) {
 }
 
 /** Child Theme version */
-const MUSEU_BOULIEU_VERSION = '0.0.1';
+const MUSEU_BOULIEU_VERSION = '0.0.2';
 
 /* Enqueues necessary JS and CSS files */
 function museu_boulieu_enqueues() {
@@ -20,6 +20,12 @@ function museu_boulieu_enqueues() {
 	wp_enqueue_style( 'museu-boulieu-child-style', get_stylesheet_uri(), array('blocksy-parent-style'), MUSEU_BOULIEU_VERSION );
 }
 add_action( 'wp_enqueue_scripts', 'museu_boulieu_enqueues');
+
+/* Enqueues block side CSS files */
+function museu_boulieu_editor_side_enqueues() {
+	wp_enqueue_style( 'museu-boulieu-editor-styles', get_stylesheet_directory() . '/css/block-styles.css', array(), MUSEU_BOULIEU_VERSION );
+}
+add_action( 'enqueue_block_editor_assets', 'museu_boulieu_editor_side_enqueues');
 
 /* Renders the content of the aside part of pages and posts, bellow the title */
 function museu_boulieu_page_side_layout() {
@@ -85,6 +91,11 @@ function museu_boulieu_filter_palette( $args ) {
 			'name' => 'Branco Boulieu',
 			'slug' => 'palette-color-5',
 			'color' => 'var(--paletteColor5, #ffffff)'
+		),
+		array(
+			'name' => 'Verde Boulieu',
+			'slug' => 'palette-color-6',
+			'color' => 'var(--paletteColor6, #364723)'
 		)
 	);
 }
