@@ -47,3 +47,31 @@
 .wp-block-group.is-style-group-museu-boulieu.has-palette-color-5-color {
     border-color: var(--paletteColor5) !important;
 }
+
+/* Stackable blocks */
+.ugb-accordion.ugb-accordion--v2.ugb-accordion>.ugb-inner-block>.ugb-block-content>.ugb-accordion__item>.ugb-accordion__heading svg {
+    fill: transparent !important;
+    width: 0px;
+    height: 0px;
+    display: none;
+    visibility: hidden;
+}
+.ugb-accordion.ugb-accordion--v2.ugb-accordion>.ugb-inner-block>.ugb-block-content>.ugb-accordion__item>.ugb-accordion__heading {
+    margin-bottom: 0;
+    transition: margin ease 0.2s;
+}
+.ugb-accordion.ugb-accordion--v2.ugb-accordion--open>.ugb-inner-block>.ugb-block-content>.ugb-accordion__item>.ugb-accordion__heading {
+    margin-bottom: 35px;
+}
+.ugb-accordion.ugb-accordion--v2.ugb-accordion>.ugb-inner-block>.ugb-block-content>.ugb-accordion__item>.ugb-accordion__heading::after {
+    content: "+";
+    font-family: none;
+    font-size: 3rem;
+    font-weight: normal;
+    color: var(--paletteColor5,#ffffff);
+    transition: transform ease 0.2s;
+    transform: rotate(0deg);
+}
+.ugb-accordion.ugb-accordion--v2.ugb-accordion--open>.ugb-inner-block>.ugb-block-content>.ugb-accordion__item>.ugb-accordion__heading::after {
+    transform: rotate(135deg);
+}
