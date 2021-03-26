@@ -106,3 +106,6 @@ require get_stylesheet_directory() . '/inc/block-styles.php';
 
 // Registers Block patterns
 require get_stylesheet_directory() . '/inc/block-patterns.php';
+
+// Registers Carousel Shortcode
+require get_stylesheet_directory() . '/inc/carousel-shortcode.php';
