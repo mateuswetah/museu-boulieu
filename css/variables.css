@@ -12,3 +12,9 @@
     --borderRadius: 0px;
     --backgroundColor:  #ffffff;
 }
+.has-palette-color-6-color {
+    color: var(--boulieu-green, #364723);
+}
+.has-palette-color-6-background-color {
+    background-color: var(--boulieu-green, #364723);
+}
