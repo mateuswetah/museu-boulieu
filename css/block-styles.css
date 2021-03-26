@@ -116,3 +116,23 @@
 .boulieu-special-home-block .wp-block-cover__inner-container p  a:not(:hover) {
     text-decoration: none !important;
 }
+
+
+/* Jetpacks carousel slider */
+.boulieu-special-home-carousel.wp-block-jetpack-slideshow {
+    margin-bottom: 0px !important;
+}
+.boulieu-special-home-carousel.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_image {
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.boulieu-special-home-carousel.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_pagination.swiper-pagination-bullets {
+    position: absolute !important;
+}
+.boulieu-special-home-carousel.wp-block-jetpack-slideshow .amp-carousel-button,
+.boulieu-special-home-carousel.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_button-next,
+.boulieu-special-home-carousel.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_button-pause,
+.boulieu-special-home-carousel.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_button-play,
+.boulieu-special-home-carousel.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_button-prev {
+    background: transparent !important;
+}
