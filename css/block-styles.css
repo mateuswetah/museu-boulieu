@@ -134,5 +134,5 @@
 .boulieu-special-home-carousel.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_button-pause,
 .boulieu-special-home-carousel.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_button-play,
 .boulieu-special-home-carousel.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_button-prev {
-    background: transparent !important;
+    background-color: transparent !important;
 }
