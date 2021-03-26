@@ -116,3 +116,22 @@ body.post #main>.ct-container>section {
 [data-header*="type-1"] .ct-header [data-transparent-row="yes"][data-row="middle"] [data-id="menu"] {
     display: none;
 }
+
+/* Jetpacks carousel slider */
+.wp-block-jetpack-slideshow {
+    margin-bottom: 0px;
+}
+.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_image {
+    width: 100%;
+    object-fit: cover;
+}
+.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_pagination.swiper-pagination-bullets {
+    position: absolute;
+}
+.wp-block-jetpack-slideshow .amp-carousel-button,
+.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_button-next,
+.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_button-pause,
+.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_button-play,
+.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_button-prev {
+    background: transparent;
+}
