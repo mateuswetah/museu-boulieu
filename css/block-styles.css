@@ -84,7 +84,7 @@
 
 /* Home special block */
 .boulieu-special-home-block {
-    margin-bottom: 0;
+    margin-bottom: 0px !important;
 }
 .boulieu-special-home-block .wp-block-cover__inner-container {
     transform: rotate(-90deg);
