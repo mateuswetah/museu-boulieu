@@ -95,7 +95,7 @@ function museu_boulieu_filter_palette( $args ) {
 		array(
 			'name' => 'Verde Boulieu',
 			'slug' => 'palette-color-6',
-			'color' => 'var(--paletteColor6, #364723)'
+			'color' => 'var(--boulieu-green, #364723)'
 		)
 	);
 }

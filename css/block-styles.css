@@ -81,3 +81,16 @@
 .ugb-accordion.ugb-accordion--v2.ugb-accordion--open>.ugb-inner-block>.ugb-block-content>.ugb-accordion__item>.ugb-accordion__heading::after {
     transform: rotate(135deg);
 }
+
+/* Home special block */
+.boulieu-special-home-block .wp-block-cover__inner-container {
+    transform: rotate(-90deg);
+    position: relative;
+    top: 200px;
+    left: -64px;
+    width: auto !important;
+}
+.boulieu-special-home-block .wp-block-cover__inner-container p {
+    white-space: nowrap;
+    font-family: Playfair Display, Sans-Serif;
+}
