@@ -1,6 +1,7 @@
 /* Page title on editor side */
-.wp-block.editor-post-title.editor-post-title__block {
+.editor-post-title__block .editor-post-title__input {
     font-family: Playfair Display, Sans-Serif;
+    font-size: 72px;
 }
 
 /* Column with borders style */
@@ -112,16 +113,26 @@
     white-space: nowrap;
     font-family: Playfair Display, Sans-Serif;
 }
-.boulieu-special-home-block .wp-block-cover__inner-container h1 a:not(:hover),
-.boulieu-special-home-block .wp-block-cover__inner-container h2 a:not(:hover),
-.boulieu-special-home-block .wp-block-cover__inner-container h3 a:not(:hover),
-.boulieu-special-home-block .wp-block-cover__inner-container h4 a:not(:hover),
-.boulieu-special-home-block .wp-block-cover__inner-container h5 a:not(:hover),
-.boulieu-special-home-block .wp-block-cover__inner-container h6 a:not(:hover),
-.boulieu-special-home-block .wp-block-cover__inner-container p  a:not(:hover) {
+.boulieu-special-home-block .wp-block-cover__inner-container h1 a,
+.boulieu-special-home-block .wp-block-cover__inner-container h2 a,
+.boulieu-special-home-block .wp-block-cover__inner-container h3 a,
+.boulieu-special-home-block .wp-block-cover__inner-container h4 a,
+.boulieu-special-home-block .wp-block-cover__inner-container h5 a,
+.boulieu-special-home-block .wp-block-cover__inner-container h6 a,
+.boulieu-special-home-block .wp-block-cover__inner-container p  a {
     text-decoration: none !important;
+    color: inherit !important;
 }
-
+.boulieu-special-home-block .wp-block-cover__inner-container h1 a:hover,
+.boulieu-special-home-block .wp-block-cover__inner-container h2 a:hover,
+.boulieu-special-home-block .wp-block-cover__inner-container h3 a:hover,
+.boulieu-special-home-block .wp-block-cover__inner-container h4 a:hover,
+.boulieu-special-home-block .wp-block-cover__inner-container h5 a:hover,
+.boulieu-special-home-block .wp-block-cover__inner-container h6 a:hover,
+.boulieu-special-home-block .wp-block-cover__inner-container p  a:hover {
+    text-decoration: underline !important;
+    color: inherit !important;
+}
 
 /* Jetpacks carousel slider */
 .boulieu-special-home-carousel.wp-block-jetpack-slideshow {
