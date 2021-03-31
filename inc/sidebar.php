@@ -96,7 +96,7 @@ function museu_boulieu_page_side_layout() {
 				if ( is_array($aside_post_image_1_id) && !empty($aside_post_image_1_id) )
 					$aside_post_image_1_id = $aside_post_image_1_id[0];
 
-				$aside_post_image_1 = wp_get_attachment_image( $aside_post_image_1_id, 'medium', false );
+				$aside_post_image_1 = wp_get_attachment_image( $aside_post_image_1_id, 'medium_large', false );
 
 				if ( $aside_post_image_1 ) :
 			?>
@@ -105,10 +105,37 @@ function museu_boulieu_page_side_layout() {
 					echo $aside_post_image_1;
 
 					$aside_post_image_1_caption = wp_get_attachment_caption( $aside_post_image_1_id );
-					if ( $aside_post_image_1_caption  ) :
+					if ( $aside_post_image_1_caption ) :
 				?>
 				<figcaption>
 					<?php echo $aside_post_image_1_caption; ?>
+				</figcaption>
+				<?php endif; ?>
+			</figure>
+			<?php endif; ?>
+		
+		<?php endif; 
+
+            $aside_post_image_2_id = get_post_meta($post->ID, 'imagem_lateral_2');
+
+			if ( $aside_post_image_2_id ): 
+
+				if ( is_array($aside_post_image_2_id) && !empty($aside_post_image_2_id) )
+					$aside_post_image_2_id = $aside_post_image_2_id[0];
+
+				$aside_post_image_2 = wp_get_attachment_image( $aside_post_image_2_id, 'medium_large', false );
+
+				if ( $aside_post_image_2 ) :
+			?>
+			<figure>
+				<?php 
+					echo $aside_post_image_2;
+
+					$aside_post_image_2_caption = wp_get_attachment_caption( $aside_post_image_2_id );
+					if ( $aside_post_image_2_caption ) :
+				?>
+				<figcaption>
+					<?php echo $aside_post_image_2_caption; ?>
 				</figcaption>
 				<?php endif; ?>
 			</figure>
