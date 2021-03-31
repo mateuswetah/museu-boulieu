@@ -59,11 +59,16 @@ body:not(.home):not(.archive) article.post:not(.entry-card) .museu-boulieu-extra
 body:not(.home):not(.archive) article.page:not(.entry-card) .museu-boulieu-extra-page-info figure {
     text-align: right;
 }
+body:not(.home):not(.archive) article.post:not(.entry-card) .museu-boulieu-extra-page-info img,
+body:not(.home):not(.archive) article.page:not(.entry-card) .museu-boulieu-extra-page-info img {
+    width: 100%;
+}
 body:not(.home):not(.archive) article.post:not(.entry-card) .museu-boulieu-extra-page-info figcaption,
 body:not(.home):not(.archive) article.page:not(.entry-card) .museu-boulieu-extra-page-info figcaption {
     --fontFamily: Playfair Display, Sans-Serif;
     font-size: 0.875em;
     margin-top: 1em;
+    margin-left: 1em;
 }
 body:not(.home):not(.archive) article.post:not(.entry-card) .entry-content,
 body:not(.home):not(.archive) article.page:not(.entry-card) .entry-content {
