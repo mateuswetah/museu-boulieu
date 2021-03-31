@@ -18,3 +18,9 @@
 .has-palette-color-6-background-color {
     background-color: var(--boulieu-green, #364723);
 }
+.has-palette-color-7-color {
+    color: var(--boulieu-blue, #455379);
+}
+.has-palette-color-7-background-color {
+    background-color: var(--boulieu-blue, #455379);
+}

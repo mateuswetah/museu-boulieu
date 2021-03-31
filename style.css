@@ -97,6 +97,10 @@ body.post #main>.ct-container>section {
     body:not(.home):not(.archive) article.page:not(.entry-card) .hero-section {
         padding-top: 12px;
     }
+    body:not(.home):not(.archive) article.post:not(.entry-card) .hero-section .page-title,
+    body:not(.home):not(.archive) article.page:not(.entry-card) .hero-section .page-title {
+        --textTransform: lowercase;
+    }
     body:not(.home):not(.archive) article.post:not(.entry-card) .hero-section .page-description,
     body:not(.home):not(.archive) article.page:not(.entry-card) .hero-section .page-description {
         margin-top: 12px;
