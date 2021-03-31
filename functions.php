@@ -12,7 +12,7 @@ if (! defined('WP_DEBUG')) {
 }
 
 /** Child Theme version */
-const MUSEU_BOULIEU_VERSION = '0.1.0';
+const MUSEU_BOULIEU_VERSION = '0.1.2';
 
 /* Enqueues necessary JS and CSS files */
 function museu_boulieu_enqueues() {
@@ -23,7 +23,7 @@ add_action( 'wp_enqueue_scripts', 'museu_boulieu_enqueues');
 
 /* Enqueues block side CSS files */
 function museu_boulieu_editor_side_enqueues() {
-	wp_enqueue_style( 'museu-boulieu-editor-styles', get_stylesheet_directory() . '/css/block-styles.css', array(), MUSEU_BOULIEU_VERSION );
+	wp_enqueue_style( 'museu-boulieu-editor-styles', get_stylesheet_directory_uri() . '/editor-styles.css', array(), MUSEU_BOULIEU_VERSION );
 }
 add_action( 'enqueue_block_editor_assets', 'museu_boulieu_editor_side_enqueues');
 
