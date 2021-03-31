@@ -96,7 +96,7 @@ function museu_boulieu_page_side_layout() {
 				if ( is_array($aside_post_image_1_id) && !empty($aside_post_image_1_id) )
 					$aside_post_image_1_id = $aside_post_image_1_id[0];
 
-				$aside_post_image_1 = wp_get_attachment_image( $aside_post_image_1_id, 'medium', true );
+				$aside_post_image_1 = wp_get_attachment_image( $aside_post_image_1_id, 'medium', false );
 
 				if ( $aside_post_image_1 ) :
 			?>
