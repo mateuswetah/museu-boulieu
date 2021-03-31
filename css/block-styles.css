@@ -1,6 +1,6 @@
 /* Page title on editor side */
 .editor-post-title__block .editor-post-title__input {
-    font-family: Playfair Display, Sans-Serif;
+    font-family: Playfair Display, Sans-Serif !important;
     font-size: 72px;
 }
 
