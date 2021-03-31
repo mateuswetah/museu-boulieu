@@ -27,6 +27,12 @@ function museu_boulieu_editor_side_enqueues() {
 }
 add_action( 'enqueue_block_editor_assets', 'museu_boulieu_editor_side_enqueues');
 
+/* Theme special features */
+function museu_boulieu_theme_supported_features() {
+	add_theme_support( 'custom-units', 'px', 'rem', 'em', 'vh', 'vw' );
+}
+add_action( 'after_setup_theme', 'museu_boulieu_theme_supported_features' );
+
 /* Filters possible Blocksy color palletes */
 function museu_boulieu_filter_palette( $args ) {
 	return array(
