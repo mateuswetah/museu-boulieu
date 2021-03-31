@@ -65,7 +65,7 @@ function museu_boulieu_filter_palette( $args ) {
 add_filter( 'blocksy:editor-color-palette', 'museu_boulieu_filter_palette' );
 
 // Registers CF for displaying images on the sidebar
-require get_stylesheet_directory() . '/inc/block-styles.php';
+require get_stylesheet_directory() . '/inc/sidebar.php';
 
 // Registers Block styles
 require get_stylesheet_directory() . '/inc/block-styles.php';
