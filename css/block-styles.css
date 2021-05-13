@@ -54,38 +54,21 @@
     border-color: var(--paletteColor5) !important;
 }
 
-/* Stackable blocks */
-.ugb-accordion.ugb-accordion--v2.ugb-accordion > .ugb-inner-block > .ugb-block-content > .ugb-accordion__item > .ugb-accordion__heading svg {
-    fill: transparent !important;
-    width: 0px;
-    height: 0px;
-    display: none;
-    visibility: hidden;
+/* GetWid blocks */
+.wp-block-getwid-accordion__header,
+.wp-block-getwid-accordion__content {
+    border: none;
 }
-.ugb-accordion.ugb-accordion--v2.ugb-accordion>.ugb-inner-block>.ugb-block-content>.ugb-accordion__item>.ugb-accordion__heading {
-    margin-bottom: 0;
-    transition: margin ease 0.2s;
+.wp-block-getwid-accordion__header a,
+.wp-block-getwid-accordion__content a {
+    color: white;
 }
-.ugb-accordion.ugb-accordion--v2.ugb-accordion--open>.ugb-inner-block>.ugb-block-content>.ugb-accordion__item>.ugb-accordion__heading {
-    margin-bottom: 35px;
-}
-.ugb-accordion.ugb-accordion--v2.ugb-accordion>.ugb-inner-block>.ugb-block-content>.ugb-accordion__item>.ugb-accordion__heading::after {
-    content: "+";
-    font-family: none;
-    font-size: 3rem;
-    font-weight: normal;
-    color: var(--paletteColor5,#ffffff);
-    width: 5rem;
-    height: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4rem;
-    transition: transform ease 0.2s;
-    transform: rotate(0deg);
-}
-.ugb-accordion.ugb-accordion--v2.ugb-accordion--open>.ugb-inner-block>.ugb-block-content>.ugb-accordion__item>.ugb-accordion__heading::after {
-    transform: rotate(135deg);
+.wp-block-getwid-accordion__header a:hover,
+.wp-block-getwid-accordion__content a:hover,
+.wp-block-getwid-accordion__header a:focus,
+.wp-block-getwid-accordion__content a:focus {
+    color: white;
+    text-decoration: underline;
 }
 
 /* Home special block */
@@ -132,23 +115,4 @@
 .boulieu-special-home-block .wp-block-cover__inner-container p  a:hover {
     text-decoration: underline !important;
     color: inherit !important;
-}
-
-/* Jetpacks carousel slider */
-.boulieu-special-home-carousel.wp-block-jetpack-slideshow {
-    margin-bottom: 0px !important;
-}
-.boulieu-special-home-carousel.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_image {
-    width: 100% !important;
-    object-fit: cover !important;
-}
-.boulieu-special-home-carousel.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_pagination.swiper-pagination-bullets {
-    position: absolute !important;
-}
-.boulieu-special-home-carousel.wp-block-jetpack-slideshow .amp-carousel-button,
-.boulieu-special-home-carousel.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_button-next,
-.boulieu-special-home-carousel.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_button-pause,
-.boulieu-special-home-carousel.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_button-play,
-.boulieu-special-home-carousel.wp-block-jetpack-slideshow .wp-block-jetpack-slideshow_button-prev {
-    background-color: transparent !important;
 }
