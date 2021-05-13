@@ -55,17 +55,20 @@
 }
 
 /* GetWid blocks */
-.wp-block-getwid-accordion__header,
+.wp-block-getwid-accordion__header{
+    font-family: 3.25rem;
+}
+.wp-block-getwid-accordion__header-wrapper,
 .wp-block-getwid-accordion__content {
     border: none;
 }
-.wp-block-getwid-accordion__header a,
+.wp-block-getwid-accordion__header-wrapper a,
 .wp-block-getwid-accordion__content a {
     color: white;
 }
-.wp-block-getwid-accordion__header a:hover,
+.wp-block-getwid-accordion__header-wrapper a:hover,
 .wp-block-getwid-accordion__content a:hover,
-.wp-block-getwid-accordion__header a:focus,
+.wp-block-getwid-accordion__header-wrapper a:focus,
 .wp-block-getwid-accordion__content a:focus {
     color: white;
     text-decoration: underline;
