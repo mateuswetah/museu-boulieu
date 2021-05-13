@@ -74,6 +74,9 @@
     color: white;
     text-decoration: underline;
 }
+.wp-block-getwid-media-text-slider {
+    margin-bottom: 0;
+}
 
 /* Home special block */
 .boulieu-special-home-block {
