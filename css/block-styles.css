@@ -57,6 +57,7 @@
 /* GetWid blocks */
 .wp-block-getwid-accordion__header{
     font-family: 3.25rem;
+    padding: 0.25em 0.5em;
 }
 .wp-block-getwid-accordion__header-wrapper,
 .wp-block-getwid-accordion__content {
