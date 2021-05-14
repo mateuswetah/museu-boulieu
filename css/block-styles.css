@@ -74,6 +74,20 @@
     color: white !important;
     text-decoration: underline !important;
 }
+.wp-block-getwid-accordion__icon,
+.wp-block-getwid-accordion__icon:hover,
+.wp-block-getwid-accordion__icon:focus {
+    text-decoration: none;
+}
+.wp-block-getwid-accordion__icon .fa {
+    font-family: "TaiancanIcons";
+}
+.wp-block-getwid-accordion__icon .fa-plus::before {
+    content: 'plus';
+}
+.wp-block-getwid-accordion__icon .fa-times::before {
+    content: 'close';
+}
 .wp-block-getwid-media-text-slider {
     margin-bottom: 0;
 }
