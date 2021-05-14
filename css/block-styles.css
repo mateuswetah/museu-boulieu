@@ -80,7 +80,7 @@
 .wp-block-getwid-accordion__icon:focus {
     text-decoration: none !important;
 }
-.wp-block-getwid-accordion__icon .fa::before {
+.wp-block-getwid-accordion__icon .fas::before {
     font-family: "TainacanIcons";
 }
 .wp-block-getwid-accordion__icon .fa-plus::before {
