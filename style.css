@@ -121,7 +121,6 @@ body.post #main>.ct-container>section {
 
 
 /* Menu with transparent header */
-[data-header*="type-1"] .ct-header [data-transparent-row="yes"][data-row="middle"] .ct-header-search,
 [data-header*="type-1"] .ct-header [data-transparent-row="yes"][data-row="middle"] [data-id="menu"] {
     display: none;
 }
