@@ -48,28 +48,43 @@ function museu_boulieu_filter_palette( $args ) {
 		),
 		array(
 			'name' => 'Cinza Boulieu 1',
-			'slug' => 'palette-color-3',
-			'color' => 'var(--paletteColor3, #231f20)'
+			'slug' => 'palette-color-2',
+			'color' => 'var(--paletteColor2, #272525)'
 		),
 		array(
-			'name' => 'Cinza Boulieu 2',
+			'name' => 'Preto Boulieu',
 			'slug' => 'palette-color-4',
-			'color' => 'var(--paletteColor4, #272525)'
+			'color' => 'var(--paletteColor4, #000000)'
 		), 
 		array(
-			'name' => 'Branco Boulieu',
+			'name' => 'Cinza Boulieu Escuro',
 			'slug' => 'palette-color-5',
-			'color' => 'var(--paletteColor5, #ffffff)'
+			'color' => 'var(--paletteColor5, #231f20)'
 		),
 		array(
-			'name' => 'Verde Boulieu',
+			'name' => 'Cinza Boulieu Claro',
 			'slug' => 'palette-color-6',
-			'color' => 'var(--boulieu-green, #364723)'
+			'color' => 'var(--paletteColor6, #949494)'
+		),
+		array(
+			'name' => 'Branco Boulieu',
+			'slug' => 'palette-color-7',
+			'color' => 'var(--paletteColor7, #ffffff)'
+		),
+		array(
+			'name' => 'Cinza Mais Claro Boulieu',
+			'slug' => 'palette-color-8',
+			'color' => 'var(--paletteColor8, #f2f2f2)'
 		),
 		array(
 			'name' => 'Azul Boulieu',
-			'slug' => 'palette-color-7',
+			'slug' => 'palette-color-9',
 			'color' => 'var(--boulieu-blue, #455379)'
+		)
+		array(
+			'name' => 'Verde Boulieu',
+			'slug' => 'palette-color-10',
+			'color' => 'var(--boulieu-green, #364723)'
 		)
 	);
 }

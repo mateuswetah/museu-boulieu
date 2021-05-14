@@ -27,13 +27,6 @@ if ( function_exists( 'register_block_style' ) ) {
                'isDefault' => true,  
             )        
         );
-
-        add_shortcode('boulieu_flexy_slider', function () {
-            return blocksy_flexy([
-                'images' => [161565, 160630, 160628],
-                'images_ratio' => '2/1'
-            ]);
-        });
     }
     add_action( 'init', 'museu_boulieu_block_styles' );
 }

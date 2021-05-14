@@ -12,15 +12,15 @@
     --borderRadius: 0px;
     --backgroundColor:  #ffffff;
 }
-.has-palette-color-6-color {
+.has-palette-color-9-color {
     color: var(--boulieu-green, #364723);
 }
-.has-palette-color-6-background-color {
+.has-palette-color-9-background-color {
     background-color: var(--boulieu-green, #364723);
 }
-.has-palette-color-7-color {
+.has-palette-color-10-color {
     color: var(--boulieu-blue, #455379);
 }
-.has-palette-color-7-background-color {
+.has-palette-color-10-background-color {
     background-color: var(--boulieu-blue, #455379);
 }
