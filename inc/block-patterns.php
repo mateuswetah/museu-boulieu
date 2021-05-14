@@ -15,8 +15,8 @@ function museu_boulieu_block_patterns() {
                 <div class="wp-block-cover alignfull has-background-dim-60 has-background-dim" style="min-height:510px">
                     <img class="wp-block-cover__image-background wp-image-830" alt="" src="' . esc_url( get_stylesheet_directory_uri() ) . '/images/image_sample_block_pattern.png' . '" data-object-fit="cover"/>
                     <div class="wp-block-cover__inner-container">
-                        <!-- wp:columns {"textColor":"palette-color-5","className":"is-style-column-museu-boulieu"} -->
-                        <div class="wp-block-columns is-style-column-museu-boulieu has-palette-color-5-color has-text-color">
+                        <!-- wp:columns {"textColor":"palette-color-8","className":"is-style-column-museu-boulieu"} -->
+                        <div class="wp-block-columns is-style-column-museu-boulieu has-palette-color-8-color has-text-color">
                             
                             <!-- wp:column {"verticalAlignment":"top","width":"75%"} -->
                             <div class="wp-block-column is-vertically-aligned-top" style="flex-basis:75%">
