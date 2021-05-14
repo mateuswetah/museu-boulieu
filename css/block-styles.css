@@ -78,10 +78,10 @@
 .wp-block-getwid-accordion__icon,
 .wp-block-getwid-accordion__icon:hover,
 .wp-block-getwid-accordion__icon:focus {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 .wp-block-getwid-accordion__icon .fa::before {
-    font-family: "TaiancanIcons";
+    font-family: "TainacanIcons";
 }
 .wp-block-getwid-accordion__icon .fa-plus::before {
     content: 'plus';
@@ -116,9 +116,8 @@
 .wp-block-getwid-media-text-slider .slick-next::before,
 .wp-block-getwid-post-slider .slick-next::before,
 .wp-block-getwid-post-carousel .slick-next::before {
-    content: 'previous';
+    content: 'next';
 }
-
 
 /* Home special block */
 .boulieu-special-home-block {
