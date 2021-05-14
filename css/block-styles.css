@@ -55,6 +55,7 @@
 }
 
 /* GetWid blocks */
+/* GetWid Accordeon blocks */
 .wp-block-getwid-accordion__header{
     font-size: 3.25rem !important;
     padding: 0.25em 0.5em !important;
@@ -79,7 +80,7 @@
 .wp-block-getwid-accordion__icon:focus {
     text-decoration: none;
 }
-.wp-block-getwid-accordion__icon .fa {
+.wp-block-getwid-accordion__icon .fa::before {
     font-family: "TaiancanIcons";
 }
 .wp-block-getwid-accordion__icon .fa-plus::before {
@@ -88,9 +89,36 @@
 .wp-block-getwid-accordion__icon .fa-times::before {
     content: 'close';
 }
+
+/* GetWid Carousel blocks */
 .wp-block-getwid-media-text-slider {
     margin-bottom: 0;
 }
+
+.wp-block-getwid-images-slider .slick-prev::before,
+.wp-block-getwid-images-slider .slick-next::before,
+.wp-block-getwid-media-text-slider .slick-prev::before,
+.wp-block-getwid-media-text-slider .slick-next::before,
+.wp-block-getwid-post-slider .slick-prev::before,
+.wp-block-getwid-post-slider .slick-next::before,
+.wp-block-getwid-post-carousel .slick-prev::before,
+.wp-block-getwid-post-carousel .slick-next::before {
+    font-family: "TainacanIcons";
+    font-size: 40px;
+}
+.wp-block-getwid-images-slider .slick-prev::before,
+.wp-block-getwid-media-text-slider .slick-prev::before,
+.wp-block-getwid-post-slider .slick-prev::before,
+.wp-block-getwid-post-carousel .slick-prev::before {
+    content: 'previous';
+}
+.wp-block-getwid-images-slider .slick-next::before,
+.wp-block-getwid-media-text-slider .slick-next::before,
+.wp-block-getwid-post-slider .slick-next::before,
+.wp-block-getwid-post-carousel .slick-next::before {
+    content: 'previous';
+}
+
 
 /* Home special block */
 .boulieu-special-home-block {
