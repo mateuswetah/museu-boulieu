@@ -48,8 +48,8 @@ function museu_boulieu_filter_palette( $args ) {
 		),
 		array(
 			'name' => 'Cinza Boulieu 1',
-			'slug' => 'palette-color-2',
-			'color' => 'var(--paletteColor2, #272525)'
+			'slug' => 'palette-color-3',
+			'color' => 'var(--paletteColor3, #272525)'
 		),
 		array(
 			'name' => 'Preto Boulieu',
@@ -85,6 +85,11 @@ function museu_boulieu_filter_palette( $args ) {
 			'name' => 'Verde Boulieu',
 			'slug' => 'palette-color-10',
 			'color' => 'var(--boulieu-green, #364723)'
+		),
+		array(
+			'name' => 'Laranja Boulieu',
+			'slug' => 'palette-color-11',
+			'color' => 'var(--boulieu-orange, #3e4929)'
 		)
 	);
 }
