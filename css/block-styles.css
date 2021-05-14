@@ -94,7 +94,6 @@
 .wp-block-getwid-media-text-slider {
     margin-bottom: 0;
 }
-
 .wp-block-getwid-images-slider .slick-prev::before,
 .wp-block-getwid-images-slider .slick-next::before,
 .wp-block-getwid-media-text-slider .slick-prev::before,
@@ -104,7 +103,18 @@
 .wp-block-getwid-post-carousel .slick-prev::before,
 .wp-block-getwid-post-carousel .slick-next::before {
     font-family: "TainacanIcons";
-    font-size: 40px;
+    font-size: 36px;
+}
+.wp-block-getwid-images-slider .slick-prev,
+.wp-block-getwid-images-slider .slick-next,
+.wp-block-getwid-media-text-slider .slick-prev,
+.wp-block-getwid-media-text-slider .slick-next,
+.wp-block-getwid-post-slider .slick-prev,
+.wp-block-getwid-post-slider .slick-next,
+.wp-block-getwid-post-carousel .slick-prev,
+.wp-block-getwid-post-carousel .slick-next {
+    width: 42px;
+    height: 42px;
 }
 .wp-block-getwid-images-slider .slick-prev::before,
 .wp-block-getwid-media-text-slider .slick-prev::before,
