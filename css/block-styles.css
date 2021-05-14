@@ -56,23 +56,23 @@
 
 /* GetWid blocks */
 .wp-block-getwid-accordion__header{
-    font-size: 3.25rem;
-    padding: 0.25em 0.5em;
+    font-size: 3.25rem !important;
+    padding: 0.25em 0.5em !important;
 }
 .wp-block-getwid-accordion__header-wrapper,
 .wp-block-getwid-accordion__content {
     border: none !important;
 }
-.wp-block-getwid-accordion__header-wrapper a,
-.wp-block-getwid-accordion__content a {
-    color: white;
+.wp-block-group.has-background .wp-block-getwid-accordion__header-wrapper a,
+.wp-block-group.has-background .wp-block-getwid-accordion__content a {
+    color: white !important;
 }
-.wp-block-getwid-accordion__header-wrapper a:hover,
-.wp-block-getwid-accordion__content a:hover,
-.wp-block-getwid-accordion__header-wrapper a:focus,
-.wp-block-getwid-accordion__content a:focus {
-    color: white;
-    text-decoration: underline;
+.wp-block-group.has-background .wp-block-getwid-accordion__header-wrapper a:hover,
+.wp-block-group.has-background .wp-block-getwid-accordion__content a:hover,
+.wp-block-group.has-background .wp-block-getwid-accordion__header-wrapper a:focus,
+.wp-block-group.has-background .wp-block-getwid-accordion__content a:focus {
+    color: white !important;
+    text-decoration: underline !important;
 }
 .wp-block-getwid-media-text-slider {
     margin-bottom: 0;
