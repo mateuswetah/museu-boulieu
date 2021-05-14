@@ -80,7 +80,7 @@ function museu_boulieu_filter_palette( $args ) {
 			'name' => 'Azul Boulieu',
 			'slug' => 'palette-color-9',
 			'color' => 'var(--boulieu-blue, #455379)'
-		)
+		),
 		array(
 			'name' => 'Verde Boulieu',
 			'slug' => 'palette-color-10',
