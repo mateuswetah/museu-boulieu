@@ -14,6 +14,11 @@ if (! defined('WP_DEBUG')) {
 /** Child Theme version */
 const MUSEU_BOULIEU_VERSION = '0.1.2';
 
+/* Updates import time limit */
+add_filter( 'tnc-bg_import_default_time_limit', function () {
+    return 10; 
+});
+
 /* Enqueues necessary JS and CSS files */
 function museu_boulieu_enqueues() {
 	wp_enqueue_style( 'blocksy-parent-style', get_template_directory_uri() . '/style.css' );
