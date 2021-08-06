@@ -56,6 +56,10 @@
 
 /* GetWid blocks */
 /* GetWid Accordeon blocks */
+.home .wp-block-group.has-background {
+    margin-bottom: 0;
+    margin-top: 0;
+}
 .wp-block-getwid-accordion__header{
     font-size: 3.25rem !important;
     padding: 0.25em 0.5em !important;
