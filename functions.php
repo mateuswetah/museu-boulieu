@@ -3,7 +3,7 @@
 Theme Name: Museu Boulieu
 Description: WordPress theme for Museu Boulieu a child theme of Blocksy
 Author: wetah
-Version: 0.1.0
+Version: 0.1.1
 Text Domain: museu-boulieu
 */
 

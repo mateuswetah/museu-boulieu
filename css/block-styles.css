@@ -96,7 +96,7 @@
 
 /* GetWid Carousel blocks */
 .wp-block-getwid-media-text-slider {
-    margin-bottom: 0;
+    margin-bottom: 0px !important;
 }
 .wp-block-getwid-images-slider .slick-prev::before,
 .wp-block-getwid-images-slider .slick-next::before,
