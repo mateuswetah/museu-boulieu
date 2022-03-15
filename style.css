@@ -4,7 +4,7 @@
  * Author: wetah
  * Template: blocksy
  * Text Domain: museu-boulieu
- * Version: 0.1.1
+ * Version: 0.1.2
  */
 
 
@@ -124,5 +124,31 @@ body.post #main>.ct-container>section {
 
 /* Menu with transparent header */
 [data-header*="type-1"] .ct-header [data-transparent-row="yes"][data-row="middle"] [data-id="menu"] {
+    opacity: 0;
+    pointer-events: none;
     display: none;
+}
+
+body.home[data-header*="type-1"] .ct-header [data-transparent-row="yes"][data-row="middle"] [data-items="primary"] .ct-header-search.ct-toggle::after,
+body.home[data-header*="type-1"] .ct-header [data-transparent-row="yes"][data-row="middle"] [data-items="primary"] .lang-item .ct-menu-link::after {
+    background-color: rgba(255,255,255,0.6);
+    content: '';
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 100%;
+    filter: blur(5px);
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    opacity: 1;
+    transition: background 0.2s ease, filter 0.3s ease;
+}
+
+body.home[data-header*="type-1"] .ct-header [data-transparent-row="yes"][data-row="middle"] [data-items="primary"] .ct-header-search.ct-toggle:hover::after,
+body.home[data-header*="type-1"] .ct-header [data-transparent-row="yes"][data-row="middle"] [data-items="primary"] .lang-item:hover .ct-menu-link::after {
+    background-color: rgba(255,255,255,0.92);
+    filter: blur(0px);
+    cursor: pointer;
 }

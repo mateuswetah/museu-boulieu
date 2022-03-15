@@ -136,18 +136,26 @@
 /* Home special block */
 .boulieu-special-home-block {
     margin-bottom: 0px !important;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-position: center;
     background-size: auto 100vh !important;
     background-repeat: no-repeat;
 }
+.boulieu-special-home-block .wp-block-getwid-media-text-slider-slide-content__content-wrapper,
 .boulieu-special-home-block .wp-block-cover__inner-container {
     transform: rotate(-90deg);
     position: relative;
-    top: 200px;
+    top: 142px;
     left: -64px;
     width: auto !important;
 }
+.boulieu-special-home-block .wp-block-getwid-media-text-slider-slide-content__content-wrapper h1,
+.boulieu-special-home-block .wp-block-getwid-media-text-slider-slide-content__content-wrapper h2,
+.boulieu-special-home-block .wp-block-getwid-media-text-slider-slide-content__content-wrapper h3,
+.boulieu-special-home-block .wp-block-getwid-media-text-slider-slide-content__content-wrapper h4,
+.boulieu-special-home-block .wp-block-getwid-media-text-slider-slide-content__content-wrapper h5,
+.boulieu-special-home-block .wp-block-getwid-media-text-slider-slide-content__content-wrapper h6,
+.boulieu-special-home-block .wp-block-getwid-media-text-slider-slide-content__content-wrapper p,
 .boulieu-special-home-block .wp-block-cover__inner-container h1,
 .boulieu-special-home-block .wp-block-cover__inner-container h2,
 .boulieu-special-home-block .wp-block-cover__inner-container h3,
@@ -158,6 +166,13 @@
     white-space: nowrap;
     font-family: Playfair Display, Sans-Serif;
 }
+.boulieu-special-home-block .wp-block-getwid-media-text-slider-slide-content__content-wrapper h1 a,
+.boulieu-special-home-block .wp-block-getwid-media-text-slider-slide-content__content-wrapper h2 a,
+.boulieu-special-home-block .wp-block-getwid-media-text-slider-slide-content__content-wrapper h3 a,
+.boulieu-special-home-block .wp-block-getwid-media-text-slider-slide-content__content-wrapper h4 a,
+.boulieu-special-home-block .wp-block-getwid-media-text-slider-slide-content__content-wrapper h5 a,
+.boulieu-special-home-block .wp-block-getwid-media-text-slider-slide-content__content-wrapper h6 a,
+.boulieu-special-home-block .wp-block-getwid-media-text-slider-slide-content__content-wrapper p  a,
 .boulieu-special-home-block .wp-block-cover__inner-container h1 a,
 .boulieu-special-home-block .wp-block-cover__inner-container h2 a,
 .boulieu-special-home-block .wp-block-cover__inner-container h3 a,
@@ -168,6 +183,13 @@
     text-decoration: none !important;
     color: inherit !important;
 }
+.boulieu-special-home-block .wp-block-getwid-media-text-slider-slide-content__content-wrapper h1 a:hover,
+.boulieu-special-home-block .wp-block-getwid-media-text-slider-slide-content__content-wrapper h2 a:hover,
+.boulieu-special-home-block .wp-block-getwid-media-text-slider-slide-content__content-wrapper h3 a:hover,
+.boulieu-special-home-block .wp-block-getwid-media-text-slider-slide-content__content-wrapper h4 a:hover,
+.boulieu-special-home-block .wp-block-getwid-media-text-slider-slide-content__content-wrapper h5 a:hover,
+.boulieu-special-home-block .wp-block-getwid-media-text-slider-slide-content__content-wrapper h6 a:hover,
+.boulieu-special-home-block .wp-block-getwid-media-text-slider-slide-content__content-wrapper p  a:hover,
 .boulieu-special-home-block .wp-block-cover__inner-container h1 a:hover,
 .boulieu-special-home-block .wp-block-cover__inner-container h2 a:hover,
 .boulieu-special-home-block .wp-block-cover__inner-container h3 a:hover,
