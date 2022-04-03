@@ -3,7 +3,7 @@
 Theme Name: Museu Boulieu
 Description: WordPress theme for Museu Boulieu a child theme of Blocksy
 Author: wetah
-Version: 0.1.12
+Version: 0.1.13
 Text Domain: museu-boulieu
 */
 
@@ -12,7 +12,7 @@ if (! defined('WP_DEBUG')) {
 }
 
 /** Child Theme version */
-const MUSEU_BOULIEU_VERSION = '0.1.12';
+const MUSEU_BOULIEU_VERSION = '0.1.13';
 
 /* Updates import time limit */
 add_filter( 'tnc-bg_import_default_time_limit', function () {
@@ -34,7 +34,7 @@ add_action( 'enqueue_block_editor_assets', 'museu_boulieu_editor_side_enqueues')
 
 /* Theme special features */
 function museu_boulieu_theme_supported_features() {
-	add_theme_support( 'custom-units', 'px', 'rem', 'em', 'vh', 'vw' );
+	add_theme_support( 'custom-units', 'px', 'rem', 'em', 'vh', 'vw', '%' );
 }
 add_action( 'after_setup_theme', 'museu_boulieu_theme_supported_features' );
 
@@ -82,14 +82,14 @@ function museu_boulieu_filter_palette( $args ) {
 			'color' => 'var(--paletteColor8, #f2f2f2)'
 		),
 		array(
-			'name' => 'Azul Boulieu',
+			'name' => 'Verde Boulieu',
 			'slug' => 'palette-color-9',
-			'color' => 'var(--boulieu-blue, #455379)'
+			'color' => 'var(--boulieu-green, #364723)'
 		),
 		array(
-			'name' => 'Verde Boulieu',
+			'name' => 'Azul Boulieu',
 			'slug' => 'palette-color-10',
-			'color' => 'var(--boulieu-green, #364723)'
+			'color' => 'var(--boulieu-blue, #455379)'
 		),
 		array(
 			'name' => 'Laranja Boulieu',

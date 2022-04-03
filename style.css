@@ -4,7 +4,7 @@
  * Author: wetah
  * Template: blocksy
  * Text Domain: museu-boulieu
- * Version: 0.1.12
+ * Version: 0.1.13
  */
 
 
@@ -151,4 +151,31 @@ body.home[data-header*="type-1"] .ct-header [data-transparent-row="yes"][data-ro
     background-color: rgba(255,255,255,0.92);
     filter: blur(0px);
     cursor: pointer;
+}
+
+@media (max-width: 999.98px) {
+    .site-branding img {
+        max-width: 100% !important;
+    }
+}
+
+.footer-logos-desktop img {
+    width: 100%;
+    height: 200px;
+}
+.footer-logos-mobile img {
+    width: 100%;
+    height: 600px;
+}
+
+
+@media (max-width: 999.98px) {
+	.footer-logos-desktop {
+		display: none;
+	}
+}
+@media (min-width: 999.98px) {
+	.footer-logos-mobile {
+		display: none;
+	}
 }
